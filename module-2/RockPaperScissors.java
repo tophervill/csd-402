@@ -33,6 +33,7 @@ public class RockPaperScissors {
         System.out.println("You chose: " + userSelection);
         System.out.println("Computer chose: " + computerSelection );
 
+        // Blank line for readable output
         System.out.println("");
 
         // Game Conditions
@@ -40,6 +41,9 @@ public class RockPaperScissors {
             System.out.println("It's a tie! You both selected " + userSelection);
         } else if ((userChoice == 1 && computerChoice == 3) || (userChoice == 2 && computerChoice == 1) || (userChoice == 3 && computerChoice == 2)) {
             System.out.println("You won! " + userSelection + " beats " + computerSelection);
+        } else if (userChoice > 3) {
+            // Error if user doesn't select within the 3 choices
+            System.out.println("Oops. You entered " + userChoice + " which is not valid. Try again.");
         } else {
             System.out.println("You lost! " + computerSelection + " beats " + userSelection);
         }
