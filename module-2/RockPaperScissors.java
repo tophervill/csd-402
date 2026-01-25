@@ -6,7 +6,7 @@ public class RockPaperScissors {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter rock (1), paper (2), or scissors (3):");
+        System.out.print("Enter rock (1), paper (2), or scissors (3): ");
         int userChoice = input.nextInt();
         // Randomize a number 1 - 3
         int computerChoice = (int) (Math.random() * 3) + 1;
@@ -16,24 +16,17 @@ public class RockPaperScissors {
         String computerSelection = "";
 
         // User's selection choice
-        if (userChoice == 1) {
-            userSelection = "Rock";
-        } else if (userChoice == 2) {
-            userSelection = "Paper";
-        } else if (userChoice == 3) {
-            userSelection = "Scissors";
-        } else {
-            System.out.println("Invalid input");
-            return;
+        switch (userChoice) {
+            case 1: userSelection = "Rock"; break;
+            case 2: userSelection = "Paper"; break;
+            case 3: userSelection = "Scissors"; break;
         }
 
         // Computer's selection choice
-        if (computerChoice == 1) {
-            computerSelection = "Rock";
-        } else if (computerChoice == 2) {
-            computerSelection = "Paper";
-        } else {
-            computerSelection = "Scissors";
+        switch (computerChoice) {
+            case 1: computerSelection = "Rock"; break;
+            case 2: computerSelection = "Paper"; break;
+            case 3: computerSelection = "Scissors"; break;
         }
 
         // Print out what User & Computer chose
