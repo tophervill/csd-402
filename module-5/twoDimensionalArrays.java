@@ -3,7 +3,7 @@
     Module 5 Assignment 2    
 */
 
-public class twoDimensionalArrays {
+public class TwoDimensionalArrays {
 
     public static void main(String[] args) {
 
