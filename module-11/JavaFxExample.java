@@ -1,5 +1,3 @@
-package com.example.javafxthings;
-
 /*
  *      Christopher Villarreal
  *      Module 11 Assignment 2
